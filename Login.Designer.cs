@@ -39,57 +39,62 @@
             // msgLbl
             // 
             this.msgLbl.AutoSize = true;
-            this.msgLbl.Location = new System.Drawing.Point(12, 9);
+            this.msgLbl.Location = new System.Drawing.Point(16, 11);
+            this.msgLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.msgLbl.Name = "msgLbl";
-            this.msgLbl.Size = new System.Drawing.Size(243, 13);
+            this.msgLbl.Size = new System.Drawing.Size(305, 16);
             this.msgLbl.TabIndex = 0;
-            this.msgLbl.Text = Properties.Resources.LoginDlg_MessageLabel;
+            this.msgLbl.Text = "A password is required for user \'{0}\' on server \'{1}\'.";
             // 
             // promptLbl
             // 
             this.promptLbl.AutoSize = true;
-            this.promptLbl.Location = new System.Drawing.Point(12, 42);
+            this.promptLbl.Location = new System.Drawing.Point(16, 52);
+            this.promptLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.promptLbl.Name = "promptLbl";
-            this.promptLbl.Size = new System.Drawing.Size(135, 13);
+            this.promptLbl.Size = new System.Drawing.Size(169, 16);
             this.promptLbl.TabIndex = 1;
-            this.promptLbl.Text = Properties.Resources.LoginDlg_PromptLabel;
+            this.promptLbl.Text = "Please enter the password:";
             // 
             // passwordTB
             // 
-            this.passwordTB.Location = new System.Drawing.Point(15, 70);
+            this.passwordTB.Location = new System.Drawing.Point(20, 86);
+            this.passwordTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passwordTB.Name = "passwordTB";
             this.passwordTB.PasswordChar = '*';
-            this.passwordTB.Size = new System.Drawing.Size(274, 20);
+            this.passwordTB.Size = new System.Drawing.Size(364, 22);
             this.passwordTB.TabIndex = 2;
             this.passwordTB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passwordTB_KeyDown);
             // 
             // OKBtn
             // 
-            this.OKBtn.Location = new System.Drawing.Point(130, 110);
+            this.OKBtn.Location = new System.Drawing.Point(173, 135);
+            this.OKBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OKBtn.Name = "OKBtn";
-            this.OKBtn.Size = new System.Drawing.Size(75, 23);
+            this.OKBtn.Size = new System.Drawing.Size(100, 28);
             this.OKBtn.TabIndex = 3;
-            this.OKBtn.Text = Properties.Resources.LoginDlg_OKBtn;
+            this.OKBtn.Text = global::P4EXP.Properties.Resources.LoginDlg_OKBtn;
             this.OKBtn.UseVisualStyleBackColor = true;
             this.OKBtn.Click += new System.EventHandler(this.OKBtn_Click);
             // 
             // CancelBtn
             // 
             this.CancelBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.CancelBtn.Location = new System.Drawing.Point(211, 110);
+            this.CancelBtn.Location = new System.Drawing.Point(281, 135);
+            this.CancelBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CancelBtn.Name = "CancelBtn";
-            this.CancelBtn.Size = new System.Drawing.Size(75, 23);
+            this.CancelBtn.Size = new System.Drawing.Size(100, 28);
             this.CancelBtn.TabIndex = 4;
-            this.CancelBtn.Text = Properties.Resources.LoginDlg_CancelBtn;
+            this.CancelBtn.Text = global::P4EXP.Properties.Resources.LoginDlg_CancelBtn;
             this.CancelBtn.UseVisualStyleBackColor = true;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.CancelButton = this.CancelBtn;
-            this.ClientSize = new System.Drawing.Size(303, 148);
+            this.ClientSize = new System.Drawing.Size(404, 182);
             this.Controls.Add(this.CancelBtn);
             this.Controls.Add(this.OKBtn);
             this.Controls.Add(this.passwordTB);
@@ -97,10 +102,11 @@
             this.Controls.Add(this.msgLbl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Login";
-            this.Text = Properties.Resources.LoginDlg_LoginTitle;
+            this.Text = "P4 Password Required";
             this.ResumeLayout(false);
             this.PerformLayout();
 

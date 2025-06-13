@@ -44,6 +44,8 @@ namespace P4EXP
             }
             diagLoggingCB.Enabled= logToFileCB.Checked;
             diagLoggingCB.Checked = mySettings.DiagnosticLogging;
+            chkUseIPspecificTicket.Checked = mySettings.UseIPSpecificTicket;
+            
         }
 
         private void OKBtn_Click(object sender, EventArgs e)
@@ -152,6 +154,11 @@ namespace P4EXP
         private void deletePromptChkB_CheckedChanged(object sender, EventArgs e)
         {
             mySettings.warnDelete = deletePromptChkB.Checked;
+        }
+
+        private void chkUseIPspecificTicket_CheckedChanged(object sender, EventArgs e)
+        {
+            mySettings.UseIPSpecificTicket = chkUseIPspecificTicket.Checked;
         }
     }
 }

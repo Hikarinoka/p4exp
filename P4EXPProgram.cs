@@ -176,6 +176,12 @@ namespace P4EXP
             return mySettings.ShowException;
         }
 
+        public static bool UseIPspecificTicket()
+        {
+            Properties.Settings mySettings = new Properties.Settings();
+            return mySettings.UseIPSpecificTicket;
+        }
+
         public static IList<FileSpec> fmd2fs(IList<FileMetaData> fmd, VersionSpec ver)
         {
             IList<FileSpec> fileSpecs = new List<FileSpec>();
@@ -399,7 +405,14 @@ namespace P4EXP
 
                 try
                 {
-                    rep.Connection.Login(password, null);
+                    if (P4EXPProgram.UseIPspecificTicket())
+                    {
+                        rep.Connection.Login(password, null);
+                    }
+                    else
+                    {
+                        rep.Connection.Login(password, true);
+                    }
                     store.loggedIn = true;
                 }
                 catch (P4Exception ex)
@@ -503,7 +516,7 @@ namespace P4EXP
                     {
                         if (ex.ErrorCode == P4ClientError.MsgRpc_HostKeyMismatch)
                         {
-                            string exception = ex.Message.Replace("Perforce", "Helix Core server");
+                            string exception = ex.Message.Replace("Perforce", "P4 server");
                             string[] sslMsg = exception.Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
                             if (SslPrompt.ShowNewFingerprint(sslMsg) == DialogResult.Cancel)
                             {
@@ -516,7 +529,7 @@ namespace P4EXP
                         }
                         else if (ex.ErrorCode == P4ClientError.MsgRpc_HostKeyUnknown)
                         {
-                            string exception = ex.Message.Replace("Perforce", "Helix Core server");
+                            string exception = ex.Message.Replace("Perforce", "P4 server");
                             string[] sslMsg = exception.Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
                             if (SslPrompt.ShowFirstContact(sslMsg) == DialogResult.Cancel)
                             {

@@ -1,14 +1,14 @@
                              Release Notes for
               P4EXP, the Helix Plugin for File Explorer
-                             Version 2024.2
+                             Version 2025.1
 
 Introduction
 
         This document lists all user-visible changes to P4EXP that were
         made between releases 2003.2 and this release. To display the version of
         P4EXP that you are using, choose "Connection Information..."
-        command from the More menu. P4EXP 2024.2 is compatible with the
-        2018.1 server release and above. P4EXP requires that P4V is installed.
+        command from the More menu. P4EXP 2025.1 is compatible with the
+        2018.1 P4 server release and above. P4EXP requires that P4V is installed.
 
         To enable file state icons in File explorer after install a
         restart of the explorer application is required. This can be done
@@ -39,6 +39,34 @@ Known Issues
         On High-DPI display, bitmap buttons on installer final dialog
         are too small. This is a Windows problem that currently doesn't
         have a fix or workaround.
+
+--------------------------------------------------------------------------
+
+Important Product Rebrand Notice
+
+        Helix Core is now P4
+        Perforce has a new look and logo that reflects our place in DevOps
+        workflows. As part of these changes, Helix Core is now P4. Name updates
+        and new icons to align with the P4 branding will be rolled out soon.
+        To learn more, see:
+         https://www.perforce.com/blog/vcs/introducing-the-p4-platform
+
+--------------------------------------------------------------------------
+
+New Functionality in 2025.1 (2025.1/2778783) (2025/06/12)
+
+        (Job #125776) *
+            Rebuilt with the 2025.1 p4api.net API.
+        
+        #2771902 (Job #126230) *
+            Added Preference setting to allow user between IP specific 
+            (p4 login) and non- IP specific (p4 login -a) option 
+            during opening connection.
+
+        #2773342, #2774163 (Job #126564) *
+            Renamed Helix Core UI elements to P4 and updated the Helix logo 
+            with latest P4 logo.
+
 --------------------------------------------------------------------------
 New Functionality in 2024.2  (2024.2/2707220) (2025/01/21)
 

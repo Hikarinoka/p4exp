@@ -19,7 +19,7 @@ namespace P4EXP.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -191,7 +191,7 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete in Helix Server.
+        ///   Looks up a localized string similar to Delete in P4 Server.
         /// </summary>
         internal static string ContextMenus_DeleteInHelixServerMenuItem {
             get {
@@ -263,7 +263,7 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Helix Core.
+        ///   Looks up a localized string similar to P4.
         /// </summary>
         internal static string ContextMenus_MainMenuItem {
             get {
@@ -389,7 +389,7 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Show in P4V.
+        ///   Looks up a localized string similar to Show in P4 Visual Client.
         /// </summary>
         internal static string ContextMenus_ShowInP4VMenuItem {
             get {
@@ -398,7 +398,7 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Start P4V.
+        ///   Looks up a localized string similar to Start P4 Visual Client.
         /// </summary>
         internal static string ContextMenus_StartP4VMenuItem {
             get {
@@ -706,7 +706,7 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Locate P4VC.
+        ///   Looks up a localized string similar to Locate P4V CLI.
         /// </summary>
         internal static string FileLogger_LocateP4VC {
             get {
@@ -778,7 +778,7 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Open in P4V.
+        ///   Looks up a localized string similar to Open in P4 Visual Client.
         /// </summary>
         internal static string FileLogger_Open_in_P4V {
             get {
@@ -922,7 +922,7 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Start P4V.
+        ///   Looks up a localized string similar to Start P4 Visual Client.
         /// </summary>
         internal static string FileLogger_StartP4V {
             get {
@@ -1057,7 +1057,7 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Helix MFA Authenticator could not be found.
+        ///   Looks up a localized string similar to P4 MFA Authenticator could not be found.
         ///Download and install it to continue..
         /// </summary>
         internal static string HMFA_Download {
@@ -1067,7 +1067,7 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Launching Helix MFA Authenticator....
+        ///   Looks up a localized string similar to Launching P4 MFA Authenticator....
         /// </summary>
         internal static string HMFA_Launch {
             get {
@@ -1177,7 +1177,7 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Launching Helix MFA Authenticator....
+        ///   Looks up a localized string similar to Launching P4 MFA Authenticator....
         /// </summary>
         internal static string LaunchingHMFA_LaunchingLabel {
             get {
@@ -1213,7 +1213,7 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Helix Core Password Required.
+        ///   Looks up a localized string similar to P4 Password Required.
         /// </summary>
         internal static string LoginDlg_LoginTitle {
             get {
@@ -1267,7 +1267,7 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cannot locate P4V application required for some P4EXP functionality.
+        ///   Looks up a localized string similar to Cannot locate P4 Visual Client application required for some P4EXP functionality.
         /// </summary>
         internal static string MessageDlg_CannotLocateP4V {
             get {
@@ -1276,7 +1276,7 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cannot locate P4VC application required for some P4EXP functionality.
+        ///   Looks up a localized string similar to Cannot locate P4V CLI application required for some P4EXP functionality.
         /// </summary>
         internal static string MessageDlg_CannotLocateP4VC {
             get {
@@ -1378,7 +1378,7 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  file marked for delete in Helix server.
+        ///   Looks up a localized string similar to  file marked for delete in P4 server.
         /// </summary>
         internal static string MessageDlg_FileMarkedForDelete {
             get {
@@ -1423,7 +1423,7 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  files marked for delete in Helix server.
+        ///   Looks up a localized string similar to  files marked for delete in P4 server.
         /// </summary>
         internal static string MessageDlg_FilesMarkedForDelete {
             get {
@@ -1558,7 +1558,7 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to no files marked for delete in Helix server.
+        ///   Looks up a localized string similar to no files marked for delete in P4 server.
         /// </summary>
         internal static string MessageDlg_NoFilesMarkedForDelete {
             get {
@@ -2003,7 +2003,7 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Prompt for confirmation of delete in Helix server.
+        ///   Looks up a localized string similar to Prompt for confirmation of delete in P4 server.
         /// </summary>
         internal static string PreferencesDlg_DeletePromptCB {
             get {
@@ -2129,6 +2129,15 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Use IP-specific tickets when logging in.
+        /// </summary>
+        internal static string PreferencesDlg_UseIPSpecificTicketCB {
+            get {
+                return ResourceManager.GetString("PreferencesDlg_UseIPSpecificTicketCB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Don&apos;t confirm deletes in the future.
         /// </summary>
         internal static string RevertDeleteWarningDlg_DeleteCB {
@@ -2138,9 +2147,9 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Marking file(s) for delete in Helix server will delete local file(s).
+        ///   Looks up a localized string similar to Marking file(s) for delete in P4 server will delete local file(s).
         ///File(s) marked for delete must be submitted to complete the deletion
-        ///in Helix server. Proceed with delete?.
+        ///in P4 server. Proceed with delete?.
         /// </summary>
         internal static string RevertDeleteWarningDlg_DeleteWarningLabel {
             get {
@@ -2167,7 +2176,7 @@ namespace P4EXP.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Helix.
+        ///   Looks up a localized string similar to P4.
         /// </summary>
         internal static string RevertDeleteWarningDlg_RevertDeleteWarningTitle {
             get {
@@ -2313,9 +2322,9 @@ namespace P4EXP.Properties {
         
         /// <summary>
         ///   Looks up a localized string similar to It is possible that someone is intercepting your connection
-        ///to the Helix Core server P4PORT &apos;10.0.50.39:1667&apos;
+        ///to the P4 server P4PORT &apos;10.0.50.39:1667&apos;
         ///If this is not a scheduled key change, then you should contact
-        ///your Helix Core server administrator.
+        ///your P4 server administrator.
         ///The fingerprint for the mismatched key sent to your client is
         ///19:4F:E0:B8:C9:C8:2B:EF:30:72:7F:DF:C1:95:5A:11:77:37:BA:39.
         /// </summary>

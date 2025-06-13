@@ -210,5 +210,17 @@ namespace P4EXP.Properties {
                 this["warnDelete"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool UseIPSpecificTicket {
+            get {
+                return ((bool)(this["UseIPSpecificTicket"]));
+            }
+            set {
+                this["UseIPSpecificTicket"] = value;
+            }
+        }
     }
 }

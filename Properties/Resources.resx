@@ -161,7 +161,7 @@
     <value>Connection Info</value>
   </data>
   <data name="ContextMenus_DeleteInHelixServerMenuItem" xml:space="preserve">
-    <value>Delete in Helix Server</value>
+    <value>Delete in P4 Server</value>
   </data>
   <data name="ContextMenus_DiffAgainstHaveMenuItem" xml:space="preserve">
     <value>Diff Against Have Revision</value>
@@ -185,7 +185,7 @@
     <value>Log off</value>
   </data>
   <data name="ContextMenus_MainMenuItem" xml:space="preserve">
-    <value>Helix Core</value>
+    <value>P4</value>
   </data>
   <data name="ContextMenus_MoreMenuItem" xml:space="preserve">
     <value>More</value>
@@ -224,10 +224,10 @@
     <value>Not Connected - Set Connection</value>
   </data>
   <data name="ContextMenus_ShowInP4VMenuItem" xml:space="preserve">
-    <value>Show in P4V</value>
+    <value>Show in P4 Visual Client</value>
   </data>
   <data name="ContextMenus_StartP4VMenuItem" xml:space="preserve">
-    <value>Start P4V</value>
+    <value>Start P4 Visual Client</value>
   </data>
   <data name="ContextMenus_SubmitMenuItem" xml:space="preserve">
     <value>Submit...</value>
@@ -265,11 +265,11 @@
     <value>This dialog will timeout if no external authentication is provided</value>
   </data>
   <data name="HMFA_Download" xml:space="preserve">
-    <value>Helix MFA Authenticator could not be found.
+    <value>P4 MFA Authenticator could not be found.
 Download and install it to continue.</value>
   </data>
   <data name="HMFA_Launch" xml:space="preserve">
-    <value>Launching Helix MFA Authenticator...</value>
+    <value>Launching P4 MFA Authenticator...</value>
   </data>
   <data name="HMFA_Title" xml:space="preserve">
     <value>Verify your identity for {0} on {1}</value>
@@ -373,7 +373,7 @@ Please re-enter your new password.</value>
     <value>Your session has expired. You must authenticate your identity to continue working in this open connection.</value>
   </data>
   <data name="LaunchingHMFA_LaunchingLabel" xml:space="preserve">
-    <value>Launching Helix MFA Authenticator...</value>
+    <value>Launching P4 MFA Authenticator...</value>
   </data>
   <data name="LaunchingHMFA_VerifyTitle" xml:space="preserve">
     <value>Verify your identity for {0} on {1}</value>
@@ -383,7 +383,7 @@ Please re-enter your new password.</value>
     <value>Cancel</value>
   </data>
   <data name="LoginDlg_LoginTitle" xml:space="preserve">
-    <value>Helix Core Password Required</value>
+    <value>P4 Password Required</value>
   </data>
   <data name="LoginDlg_MessageLabel" xml:space="preserve">
     <value>A password is required for user '{0}' on server '{1}'.</value>
@@ -402,7 +402,7 @@ Please re-enter your new password.</value>
     <value>OK</value>
   </data>
   <data name="PreferencesDlg_DeletePromptCB" xml:space="preserve">
-    <value>Prompt for confirmation of delete in Helix server</value>
+    <value>Prompt for confirmation of delete in P4 server</value>
   </data>
   <data name="PreferencesDlg_DiagLoggingCB" xml:space="preserve">
     <value>Enable &amp;diagnostic logging</value>
@@ -447,9 +447,9 @@ Please re-enter your new password.</value>
     <value>Don't confirm deletes in the future</value>
   </data>
   <data name="RevertDeleteWarningDlg_DeleteWarningLabel" xml:space="preserve">
-    <value>Marking file(s) for delete in Helix server will delete local file(s).
+    <value>Marking file(s) for delete in P4 server will delete local file(s).
 File(s) marked for delete must be submitted to complete the deletion
-in Helix server. Proceed with delete?</value>
+in P4 server. Proceed with delete?</value>
   </data>
   <data name="RevertDeleteWarningDlg_DeleteWarningTitle" xml:space="preserve">
     <value>Delete</value>
@@ -458,7 +458,7 @@ in Helix server. Proceed with delete?</value>
     <value>No</value>
   </data>
   <data name="RevertDeleteWarningDlg_RevertDeleteWarningTitle" xml:space="preserve">
-    <value>Helix</value>
+    <value>P4</value>
   </data>
   <data name="RevertDeleteWarningDlg_RevertWarningLabel" xml:space="preserve">
     <value>Reverting file(s) will overwrite any edits to the files.
@@ -553,7 +553,7 @@ Proceed with revert?</value>
     <value>Locate P4Merge</value>
   </data>
   <data name="FileLogger_LocateP4VC" xml:space="preserve">
-    <value>Locate P4VC</value>
+    <value>Locate P4V CLI</value>
   </data>
   <data name="FileLogger_Login" xml:space="preserve">
     <value>Login</value>
@@ -562,7 +562,7 @@ Proceed with revert?</value>
     <value>Log Off</value>
   </data>
   <data name="FileLogger_Open in P4V" xml:space="preserve">
-    <value>Open in P4V</value>
+    <value>Open in P4 Visual Client</value>
   </data>
   <data name="FileLogger_P4EXPProgram" xml:space="preserve">
     <value>P4EXPProgram</value>
@@ -610,7 +610,7 @@ Proceed with revert?</value>
     <value>Show Properties</value>
   </data>
   <data name="FileLogger_StartP4V" xml:space="preserve">
-    <value>Start P4V</value>
+    <value>Start P4 Visual Client</value>
   </data>
   <data name="FileLogger_Submit" xml:space="preserve">
     <value>Submit</value>
@@ -631,10 +631,10 @@ Proceed with revert?</value>
     <value>Cannot locate P4Merge application required for some P4EXP functionality</value>
   </data>
   <data name="MessageDlg_CannotLocateP4V" xml:space="preserve">
-    <value>Cannot locate P4V application required for some P4EXP functionality</value>
+    <value>Cannot locate P4 Visual Client application required for some P4EXP functionality</value>
   </data>
   <data name="MessageDlg_CannotLocateP4VC" xml:space="preserve">
-    <value>Cannot locate P4VC application required for some P4EXP functionality</value>
+    <value>Cannot locate P4V CLI application required for some P4EXP functionality</value>
   </data>
   <data name="MessageDlg_CheckOut" xml:space="preserve">
     <value>Check Out</value>
@@ -667,7 +667,7 @@ The following errors and warnings were reported by the server:
     <value> file checked out</value>
   </data>
   <data name="MessageDlg_FileMarkedForDelete" xml:space="preserve">
-    <value> file marked for delete in Helix server</value>
+    <value> file marked for delete in P4 server</value>
   </data>
   <data name="MessageDlg_FileRemovedFromWorkspace" xml:space="preserve">
     <value> file removed from workspace</value>
@@ -682,7 +682,7 @@ The following errors and warnings were reported by the server:
     <value> files checked out</value>
   </data>
   <data name="MessageDlg_FilesMarkedForDelete" xml:space="preserve">
-    <value> files marked for delete in Helix server</value>
+    <value> files marked for delete in P4 server</value>
   </data>
   <data name="MessageDlg_FilesRemovedFromWorkspace" xml:space="preserve">
     <value> files removed from workspace</value>
@@ -725,7 +725,7 @@ The following errors and warnings were reported by the server:
     <value>no files checked out</value>
   </data>
   <data name="MessageDlg_NoFilesMarkedForDelete" xml:space="preserve">
-    <value>no files marked for delete in Helix server</value>
+    <value>no files marked for delete in P4 server</value>
   </data>
   <data name="MessageDlg_NoFilesRemovedFromWorkspace" xml:space="preserve">
     <value>no files removed from workspace</value>
@@ -814,9 +814,9 @@ Confirm valid Server and User entries.</value>
   </data>
   <data name="SslPromptDlg_WarningText" xml:space="preserve">
     <value>It is possible that someone is intercepting your connection
-to the Helix Core server P4PORT '10.0.50.39:1667'
+to the P4 server P4PORT '10.0.50.39:1667'
 If this is not a scheduled key change, then you should contact
-your Helix Core server administrator.
+your P4 server administrator.
 The fingerprint for the mismatched key sent to your client is
 19:4F:E0:B8:C9:C8:2B:EF:30:72:7F:DF:C1:95:5A:11:77:37:BA:39</value>
   </data>
@@ -1050,5 +1050,8 @@ The fingerprint for the mismatched key sent to your client is
   </data>
   <data name="HelpLink_Index" xml:space="preserve">
     <value>https://www.perforce.com/perforce/doc.current/manuals/p4exp/index.html</value>
+  </data>
+  <data name="PreferencesDlg_UseIPSpecificTicketCB" xml:space="preserve">
+    <value>Use IP-specific tickets when logging in</value>
   </data>
 </root>

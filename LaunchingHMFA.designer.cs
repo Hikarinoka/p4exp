@@ -43,41 +43,46 @@ namespace P4EXP
             // 
             this.closeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.closeBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.closeBtn.Location = new System.Drawing.Point(377, 226);
+            this.closeBtn.Location = new System.Drawing.Point(503, 278);
+            this.closeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.closeBtn.Name = "closeBtn";
-            this.closeBtn.Size = new System.Drawing.Size(75, 23);
+            this.closeBtn.Size = new System.Drawing.Size(100, 28);
             this.closeBtn.TabIndex = 6;
-            this.closeBtn.Text = Properties.Resources.LaunchingHMFA_CloseBtn;
+            this.closeBtn.Text = global::P4EXP.Properties.Resources.LaunchingHMFA_CloseBtn;
             this.closeBtn.UseVisualStyleBackColor = true;
             this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // launchingGridLbl
             // 
             this.launchingGridLbl.AutoSize = true;
-            this.launchingGridLbl.Location = new System.Drawing.Point(143, 188);
+            this.launchingGridLbl.Location = new System.Drawing.Point(191, 231);
+            this.launchingGridLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.launchingGridLbl.Name = "launchingGridLbl";
-            this.launchingGridLbl.Size = new System.Drawing.Size(183, 13);
+            this.launchingGridLbl.Size = new System.Drawing.Size(207, 16);
             this.launchingGridLbl.TabIndex = 5;
-            this.launchingGridLbl.Text = Properties.Resources.LaunchingHMFA_LaunchingLabel;
+            this.launchingGridLbl.Text = "Launching P4 MFA Authenticator...";
             this.launchingGridLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // expiredGridLbl
             // 
             this.expiredGridLbl.AutoSize = true;
-            this.expiredGridLbl.Location = new System.Drawing.Point(13, 13);
-            this.expiredGridLbl.MaximumSize = new System.Drawing.Size(440, 0);
+            this.expiredGridLbl.Location = new System.Drawing.Point(17, 16);
+            this.expiredGridLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.expiredGridLbl.MaximumSize = new System.Drawing.Size(587, 0);
             this.expiredGridLbl.Name = "expiredGridLbl";
-            this.expiredGridLbl.Size = new System.Drawing.Size(424, 26);
+            this.expiredGridLbl.Size = new System.Drawing.Size(557, 32);
             this.expiredGridLbl.TabIndex = 4;
-            this.expiredGridLbl.Text = Properties.Resources.LaunchingHMFA_ExpiredLabel;
+            this.expiredGridLbl.Text = "Your session has expired. You must authenticate your identity to continue working" +
+    " in this open connection.";
             // 
             // downloadBtn
             // 
-            this.downloadBtn.Location = new System.Drawing.Point(298, 226);
+            this.downloadBtn.Location = new System.Drawing.Point(397, 278);
+            this.downloadBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.downloadBtn.Name = "downloadBtn";
-            this.downloadBtn.Size = new System.Drawing.Size(75, 23);
+            this.downloadBtn.Size = new System.Drawing.Size(100, 28);
             this.downloadBtn.TabIndex = 7;
-            this.downloadBtn.Text = Properties.Resources.LaunchingHMFA_DownloadBtn;
+            this.downloadBtn.Text = global::P4EXP.Properties.Resources.LaunchingHMFA_DownloadBtn;
             this.downloadBtn.UseVisualStyleBackColor = true;
             this.downloadBtn.Click += new System.EventHandler(this.downloadBtn_Click);
             // 
@@ -87,18 +92,19 @@ namespace P4EXP
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox.Image = global::P4EXP.Properties.Resources.download_icon;
-            this.pictureBox.Location = new System.Drawing.Point(196, 79);
+            this.pictureBox.Location = new System.Drawing.Point(261, 97);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(78, 78);
+            this.pictureBox.Size = new System.Drawing.Size(104, 96);
             this.pictureBox.TabIndex = 3;
             this.pictureBox.TabStop = false;
             // 
             // LaunchingHMFA
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.closeBtn;
-            this.ClientSize = new System.Drawing.Size(464, 261);
+            this.ClientSize = new System.Drawing.Size(619, 321);
             this.Controls.Add(this.downloadBtn);
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.launchingGridLbl);
@@ -106,9 +112,10 @@ namespace P4EXP
             this.Controls.Add(this.pictureBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "LaunchingHMFA";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = Properties.Resources.LaunchingHMFA_VerifyTitle;
+            this.Text = "Verify your identity for {0} on {1}";
             this.Shown += new System.EventHandler(this.LaunchingHMFA_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);

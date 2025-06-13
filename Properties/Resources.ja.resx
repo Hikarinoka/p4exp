@@ -161,7 +161,7 @@
     <value>接続情報</value>
   </data>
   <data name="ContextMenus_DeleteInHelixServerMenuItem" xml:space="preserve">
-    <value>Helixサーバ内で削除</value>
+    <value>P4サーバ内で削除</value>
   </data>
   <data name="ContextMenus_DiffAgainstHaveMenuItem" xml:space="preserve">
     <value>所有リビジョンと比較</value>
@@ -185,7 +185,7 @@
     <value>ログオフ</value>
   </data>
   <data name="ContextMenus_MainMenuItem" xml:space="preserve">
-    <value>Helix Core</value>
+    <value>P4</value>
   </data>
   <data name="ContextMenus_MoreMenuItem" xml:space="preserve">
     <value>その他</value>
@@ -224,10 +224,10 @@
     <value>接続されていません - 接続の設定</value>
   </data>
   <data name="ContextMenus_ShowInP4VMenuItem" xml:space="preserve">
-    <value>P4Vで表示</value>
+    <value>P4 Visual Clientで表示</value>
   </data>
   <data name="ContextMenus_StartP4VMenuItem" xml:space="preserve">
-    <value>P4Vを起動</value>
+    <value>P4 Visual Clientを起動</value>
   </data>
   <data name="ContextMenus_SubmitMenuItem" xml:space="preserve">
     <value>サブミット...</value>
@@ -265,11 +265,11 @@
     <value>外部認証を指定しないと、このダイアログがタイムアウトになります</value>
   </data>
   <data name="HMFA_Download" xml:space="preserve">
-    <value>Helix MFA Authenticatorが見つかりませんでした。
-操作を続行するには、Helix MFA Authenticatorをダウンロードしてインストールしてください。</value>
+    <value>P4 MFA Authenticatorが見つかりませんでした。
+操作を続行するには、P4 MFA Authenticatorをダウンロードしてインストールしてください。</value>
   </data>
   <data name="HMFA_Launch" xml:space="preserve">
-    <value>Helix MFA Authenticatorを起動しています...</value>
+    <value>P4 MFA Authenticatorを起動しています...</value>
   </data>
   <data name="HMFA_Title" xml:space="preserve">
     <value>サーバポート「{1}」で「{0}」のID情報を検証</value>
@@ -373,7 +373,7 @@
     <value>セッションが期限切れになりました。この接続で操作を続行するには、自分のID情報を認証する必要があります</value>
   </data>
   <data name="LaunchingHMFA_LaunchingLabel" xml:space="preserve">
-    <value>Helix MFA Authenticatorを起動しています...</value>
+    <value>P4 MFA Authenticatorを起動しています...</value>
   </data>
   <data name="LaunchingHMFA_VerifyTitle" xml:space="preserve">
     <value>サーバポート「{1}」で「{0}」のID情報を検証</value>
@@ -383,7 +383,7 @@
     <value>キャンセル</value>
   </data>
   <data name="LoginDlg_LoginTitle" xml:space="preserve">
-    <value>Helix Coreのパスワードを入力する必要があります</value>
+    <value>P4のパスワードを入力する必要があります</value>
   </data>
   <data name="LoginDlg_MessageLabel" xml:space="preserve">
     <value>サーバ「{1}」上のユーザ「{0}」のパスワードを入力する必要があります。</value>
@@ -402,7 +402,7 @@
     <value>OK</value>
   </data>
   <data name="PreferencesDlg_DeletePromptCB" xml:space="preserve">
-    <value>Helixサーバで削除操作を行う場合の確認画面</value>
+    <value>P4サーバで削除操作を行う場合の確認画面</value>
   </data>
   <data name="PreferencesDlg_DiagLoggingCB" xml:space="preserve">
     <value>診断ログを有効にする(&amp;D)</value>
@@ -447,8 +447,8 @@
     <value>次回から削除の確認画面を表示しない</value>
   </data>
   <data name="RevertDeleteWarningDlg_DeleteWarningLabel" xml:space="preserve">
-    <value>Helixサーバでファイルに削除マークを付けると、ローカルファイルが削除されます。
-削除マークが付いているファイルをHelixサーバから削除するには、
+    <value>P4サーバでファイルに削除マークを付けると、ローカルファイルが削除されます。
+削除マークが付いているファイルをP4サーバから削除するには、
 それらのファイルをサブミットする必要があります。削除操作を続行しますか？</value>
   </data>
   <data name="RevertDeleteWarningDlg_DeleteWarningTitle" xml:space="preserve">
@@ -458,7 +458,7 @@
     <value>いいえ</value>
   </data>
   <data name="RevertDeleteWarningDlg_RevertDeleteWarningTitle" xml:space="preserve">
-    <value>Helix</value>
+    <value>P4</value>
   </data>
   <data name="RevertDeleteWarningDlg_RevertWarningLabel" xml:space="preserve">
     <value>ファイルを元に戻すと、そのファイルに対する編集内容がすべて上書きされます。
@@ -553,7 +553,7 @@
     <value>P4Mergeを検索</value>
   </data>
   <data name="FileLogger_LocateP4VC" xml:space="preserve">
-    <value>P4VCを検索</value>
+    <value>P4V CLIを検索</value>
   </data>
   <data name="FileLogger_Login" xml:space="preserve">
     <value>ログイン</value>
@@ -562,7 +562,7 @@
     <value>ログオフ</value>
   </data>
   <data name="FileLogger_Open in P4V" xml:space="preserve">
-    <value>P4Vで開く</value>
+    <value>P4 Visual Clientで開く</value>
   </data>
   <data name="FileLogger_P4EXPProgram" xml:space="preserve">
     <value>P4EXPProgram</value>
@@ -610,7 +610,7 @@
     <value>プロパティを表示</value>
   </data>
   <data name="FileLogger_StartP4V" xml:space="preserve">
-    <value>P4Vを起動</value>
+    <value>P4 Visual Clientを起動</value>
   </data>
   <data name="FileLogger_Submit" xml:space="preserve">
     <value>サブミット</value>
@@ -631,10 +631,10 @@
     <value>一部のP4EXP機能で必要なP4Mergeアプリケーションが見つかりません</value>
   </data>
   <data name="MessageDlg_CannotLocateP4V" xml:space="preserve">
-    <value>一部のP4EXP機能で必要なP4Vアプリケーションが見つかりません</value>
+    <value>一部のP4EXP機能で必要なP4 Visual Clientアプリケーションが見つかりません</value>
   </data>
   <data name="MessageDlg_CannotLocateP4VC" xml:space="preserve">
-    <value>一部のP4EXP機能で必要なP4VCアプリケーションが見つかりません</value>
+    <value>一部のP4EXP機能で必要なP4V CLIアプリケーションが見つかりません</value>
   </data>
   <data name="MessageDlg_CheckOut" xml:space="preserve">
     <value>チェックアウト</value>
@@ -667,7 +667,7 @@
     <value> ファイルがチェックアウトされました</value>
   </data>
   <data name="MessageDlg_FileMarkedForDelete" xml:space="preserve">
-    <value>Helixサーバ上でファイルに削除マークが付けられました</value>
+    <value>P4サーバ上でファイルに削除マークが付けられました</value>
   </data>
   <data name="MessageDlg_FileRemovedFromWorkspace" xml:space="preserve">
     <value> ファイルがワークスペースから削除されました</value>
@@ -682,7 +682,7 @@
     <value> ファイルがチェックアウトされました</value>
   </data>
   <data name="MessageDlg_FilesMarkedForDelete" xml:space="preserve">
-    <value>ファイルにHelixサーバ上で削除マークが付けられました</value>
+    <value>ファイルにP4サーバ上で削除マークが付けられました</value>
   </data>
   <data name="MessageDlg_FilesRemovedFromWorkspace" xml:space="preserve">
     <value> ファイルがワークスペースから削除されました</value>
@@ -725,7 +725,7 @@
     <value>チェックアウトされたファイルはありません</value>
   </data>
   <data name="MessageDlg_NoFilesMarkedForDelete" xml:space="preserve">
-    <value>Helixサーバ上で削除マークが付けられたファイルはありません</value>
+    <value>P4サーバ上で削除マークが付けられたファイルはありません</value>
   </data>
   <data name="MessageDlg_NoFilesRemovedFromWorkspace" xml:space="preserve">
     <value>ワークスペースから削除されたファイルはありません</value>
@@ -813,10 +813,10 @@
     <value>ログファイルの名前を入力:</value>
   </data>
   <data name="SslPromptDlg_WarningText" xml:space="preserve">
-    <value>Helix CoreサーバP4PORT「10.0.50.39:1667」への接続を
+    <value>P4サーバP4PORT「10.0.50.39:1667」への接続を
 だれかが傍受している可能性があります。
 このキー変更が計画的な変更ではない場合は、
-Helix Coreサーバの管理者に連絡してください。
+P4サーバの管理者に連絡してください。
 クライアントに送信された不一致キーのフィンガープリントは、以下のとおりです。
 19:4F:E0:B8:C9:C8:2B:EF:30:72:7F:DF:C1:95:5A:11:77:37:BA:39</value>
   </data>
@@ -1050,5 +1050,8 @@ Helix Coreサーバの管理者に連絡してください。
   </data>
   <data name="HelpLink_Index" xml:space="preserve">
     <value>https://www.toyo.co.jp/files/user/img/product/ss/help/perforce/r19.2/manuals/p4exp/index.html</value>
+  </data>
+  <data name="PreferencesDlg_UseIPSpecificTicketCB" xml:space="preserve">
+    <value>ログイン時にIP固有のチケットを使用する</value>
   </data>
 </root>
