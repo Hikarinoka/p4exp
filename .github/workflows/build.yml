@@ -1,4 +1,4 @@
-name: Build P4EXP Setup.exe
+name: CI – Build P4EXP Installer
 
 on:
   push:
@@ -6,46 +6,34 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-installer:
     runs-on: windows-latest
 
-    env:
-      P4PORT: ${{ secrets.P4PORT }}
-      P4USER: ${{ secrets.P4USER }}
-      P4PASSWD: ${{ secrets.P4PASSWD }}
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '7.0.x'
 
-      - name: Apply Chinese localization
-        run: |
-          cp localization/zh-CN/* P4EXP/**
+      - name: Restore dependencies
+        run: dotnet restore P4EXP.sln
 
       - name: Build project
+        run: dotnet build P4EXP.sln --configuration Release
+
+      - name: Install WiX Toolset
+        run: choco install wixtoolset
+
+      - name: Compile WiX Bundle
         run: |
-          dotnet restore P4EXP.sln
-          dotnet build P4EXP.sln --configuration Release
+          candle.exe installer/Bundle.wxs \
+            -o installer/Bundle.wixobj -ext WixBalExtension
+          light.exe installer/Bundle.wixobj \
+            -o installer/output/Setup.exe -ext WixBalExtension
 
-      - name: Build Setup.exe with Advanced Installer
-        uses: caphyon/advinst-github-action@main
-        with:
-          advinst-version: '22.0'
-          advinst-license: ${{ secrets.ADVINST_LICENSE_KEY }}
-          advinst-enable-automation: 'true'
-          aip-path: installer/P4EXP.aip
-          aip-build-name: DefaultBuild
-          aip-package-name: Setup.exe
-          aip-output-dir: ${{ github.workspace }}/installer/output
-          aip-commands: |
-            SetVersion ${{ github.run_number }}.0.0
-
-      - name: Upload Setup.exe
+      - name: Upload Installer
         uses: actions/upload-artifact@v3
         with:
           name: P4EXP-Setup
