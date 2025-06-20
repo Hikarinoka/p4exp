@@ -1,4 +1,4 @@
-# .github/workflows/build.yml (最终解决方案 - LFS 修正版)
+# .github/workflows/build.yml (最终修正版 v7 - 修正Shell和路径)
 
 name: Build P4EXP with Chinese Language Pack
 
@@ -16,29 +16,42 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        # 【重要修正】启用 Git LFS，确保 DLL 文件被完整下载
         lfs: true
 
-    # 步骤2：设置 MSBuild 环境
+    # 步骤2：下载并放置 P4API.NET 依赖项
+    - name: Download and place dependencies
+      run: |
+        Invoke-WebRequest -Uri "ftp://ftp.perforce.com/perforce/r23.2/bin.ntx64/p4api_vs2015_dyn.zip" -OutFile "p4api.zip"
+        Expand-Archive -Path "p4api.zip" -DestinationPath "p4api_temp"
+        Copy-Item -Path "p4api_temp/p4api.net/lib/net452/*" -Destination "libs/" -Recurse -Force
+      # 这一步使用 powershell 没有问题，保持不变
+      shell: powershell
+
+    # 步骤3：设置 MSBuild 环境
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v1.1
 
-    # 步骤3：还原 NuGet 包
+    # 步骤4：还原 NuGet 包
     - name: Restore NuGet packages
       run: nuget restore P4EXP.sln
+      # 【重要修正】明确使用 cmd shell
+      shell: cmd
 
-    # 步骤4：编译 P4EXP 单个项目
+    # 步骤5：编译 P4EXP 单个项目
     - name: Build the P4EXP Project
-      run: msbuild P4EXP/P4EXP.csproj /p:Configuration=Release /p:Platform=x64
-
-    # 步骤5：将编译好的文件打包
+      # 【重要修正】使用反斜杠 \ 并明确使用 cmd shell
+      run: msbuild P4EXP\P4EXP.csproj /p:Configuration=Release /p:Platform=x64
+      shell: cmd
+    
+    # 步骤6：将编译好的文件打包
     - name: Package the artifacts
       run: |
         mkdir artifact
         cp -r P4EXP/bin/x64/Release/* artifact/
+      # 这一步使用 bash 更方便，保持不变
       shell: bash
     
-    # 步骤6：上传打包好的文件
+    # 步骤7：上传打包好的文件
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
