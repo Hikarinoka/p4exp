@@ -1,4 +1,4 @@
-# .github/workflows/build.yml (最终正确版)
+# .github/workflows/build.yml (v9 - 终极混合方案)
 
 name: Build P4EXP with Chinese Language Pack
 
@@ -12,35 +12,38 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    # 1. 检出代码
+    # 步骤1：检出代码 (包含您提交到 libs 文件夹的 DLL)
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
         lfs: true
 
-    # 2. 设置 MSBuild 环境
+    # 步骤2：设置 MSBuild 环境
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v1.1
 
-    # 3. 还原 NuGet 包 (这是解决所有依赖问题的关键)
-    - name: Restore NuGet packages
-      run: nuget restore P4EXP.sln
+    # 步骤3：切换到 P4EXP 项目目录并执行构建
+    - name: Restore and Build P4EXP Project
+      # 【关键修正①】设置工作目录，后续所有命令都在 P4EXP\ 文件夹内执行
+      working-directory: ./P4EXP 
+      run: |
+        echo "--- Current Directory: %CD% ---"
+        echo "--- Restoring packages for P4EXP.csproj ---"
+        nuget restore P4EXP.csproj
+
+        echo "--- Building P4EXP.csproj ---"
+        msbuild P4EXP.csproj /p:Configuration=Release /p:Platform=x64
       shell: cmd
 
-    # 4. 编译整个解决方案
-    #    现在 NuGet 已经准备好了所有依赖，编译解决方案是最稳妥的方式
-    - name: Build the Solution
-      run: msbuild P4EXP.sln /p:Configuration=Release /p:Platform=x64
-      shell: cmd
-    
-    # 5. 将编译好的文件打包 (使用从 .csproj 中发现的正确路径)
+    # 步骤4：将编译好的文件打包
     - name: Package the artifacts
       run: |
         mkdir artifact
+        # 【关键修正②】打包路径也相应调整
         cp -r P4EXP/bin/x64/Release/* artifact/
       shell: bash
     
-    # 6. 上传打包好的文件
+    # 步骤5：上传打包好的文件
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
