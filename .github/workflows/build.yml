@@ -1,4 +1,4 @@
-# .github/workflows/build.yml
+# .github/workflows/build.yml (调试版本)
 
 name: Build P4EXP with Chinese Language Pack
 
@@ -28,14 +28,20 @@ jobs:
     - name: Build the solution
       run: msbuild P4EXP.sln /p:Configuration=Release
 
-    # 步骤5：将编译好的文件打包 <--- 看这里
+    # 【新增的调试步骤】
+    # 这一步会列出编译后的所有文件和文件夹结构
+    - name: List build output for debugging
+      run: ls -RF
+      shell: bash
+
+    # 步骤5：将编译好的文件打包 (这一步现在会失败，但没关系)
     - name: Package the artifacts
       run: |
         mkdir artifact
-        # 【重要修改】路径中增加了 /net48/
+        # 我们暂时保留这个错误的路径，目的是让工作流运行到上一步然后停止
         cp -r P4EXP/bin/Release/net48/* artifact/
       shell: bash
-    
+
     # 步骤6：上传打包好的文件
     - name: Upload artifact
       uses: actions/upload-artifact@v4
