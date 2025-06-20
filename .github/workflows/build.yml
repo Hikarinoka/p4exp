@@ -1,0 +1,46 @@
+# .github/workflows/build.yml
+
+name: Build P4EXP with Chinese Language Pack
+
+# 工作流触发条件：当有代码推送到 main 分支时
+on:
+  push:
+    branches: [ main, master ]
+  # 也允许手动触发
+  workflow_dispatch:
+
+jobs:
+  build:
+    # 使用 Windows 最新版的虚拟服务器来运行
+    runs-on: windows-latest
+
+    steps:
+    # 步骤1：检出你的代码
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # 步骤2：设置 MSBuild 环境 (Visual Studio 的编译工具)
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v1.1
+
+    # 步骤3：还原项目依赖的 NuGet 包
+    - name: Restore NuGet packages
+      run: nuget restore P4EXP.sln
+
+    # 步骤4：使用 MSBuild 编译解决方案 (Release 模式)
+    - name: Build the solution
+      run: msbuild P4EXP.sln /p:Configuration=Release
+
+    # 步骤5：将编译好的文件打包
+    - name: Package the artifacts
+      run: |
+        mkdir artifact
+        cp -r P4EXP/bin/Release/* artifact/
+      shell: bash
+    
+    # 步骤6：上传打包好的文件，供下载
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: p4exp-zh-CN-build
+        path: artifact/
