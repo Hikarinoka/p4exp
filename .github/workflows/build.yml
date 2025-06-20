@@ -40,7 +40,7 @@ jobs:
     
     # 步骤6：上传打包好的文件，供下载
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4 # <--- 主要修改在这里，从 v3 更新到 v4
       with:
         name: p4exp-zh-CN-build
         path: artifact/
