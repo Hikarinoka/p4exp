@@ -1,40 +1,48 @@
-name: CI – Build P4EXP Installer
+# .github/workflows/build.yml (最终版 - 依赖项已入库)
+
+name: Build P4EXP with Chinese Language Pack
 
 on:
   push:
-    branches: [main]
+    branches: [ main, master ]
   workflow_dispatch:
 
 jobs:
-  build-installer:
+  build:
     runs-on: windows-latest
 
     steps:
-      - uses: actions/checkout@v3
+    # 步骤1：检出你的代码
+    # lfs: true 是个好习惯，以防万一，我们保留它
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        lfs: true
 
-      - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '8.0.x'
+    # 步骤2：设置 MSBuild 环境
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v1.1
 
-      - name: Restore dependencies
-        run: |
-          dotnet --info
-          dotnet restore P4EXP.sln
+    # 步骤3：还原 NuGet 包
+    - name: Restore NuGet packages
+      run: nuget restore P4EXP.sln
+      shell: cmd
 
-      - name: Build project
-        run: dotnet build P4EXP.sln --configuration Release
-
-      - name: Install WiX Toolset
-        run: choco install wixtoolset
-
-      - name: Compile WiX Bundle
-        run: |
-          candle.exe installer/Bundle.wxs -o installer/Bundle.wixobj -ext WixBalExtension
-          light.exe installer/Bundle.wixobj -o installer/output/Setup.exe -ext WixBalExtension
-
-      - name: Upload Installer
-        uses: actions/upload-artifact@v3
-        with:
-          name: P4EXP-Setup
-          path: installer/output/Setup.exe
+    # 步骤4：编译 P4EXP 单个项目
+    - name: Build the P4EXP Project
+      run: msbuild P4EXP\P4EXP.csproj /p:Configuration=Release /p:Platform=x64
+      shell: cmd
+    
+    # 步骤5：将编译好的文件打包
+    - name: Package the artifacts
+      run: |
+        mkdir artifact
+        cp -r P4EXP/bin/x64/Release/* artifact/
+      shell: bash
+    
+    # 步骤6：上传打包好的文件
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: p4exp-zh-CN-build
+        path: artifact/
