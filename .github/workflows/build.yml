@@ -1,4 +1,4 @@
-# .github/workflows/build.yml (调试版本)
+# .github/workflows/build.yml (最终修正版)
 
 name: Build P4EXP with Chinese Language Pack
 
@@ -9,6 +9,7 @@ on:
 
 jobs:
   build:
+    # 使用 Windows 最新版的虚拟服务器来运行
     runs-on: windows-latest
 
     steps:
@@ -26,22 +27,17 @@ jobs:
 
     # 步骤4：编译解决方案
     - name: Build the solution
-      run: msbuild P4EXP.sln /p:Configuration=Release
+      # 为了确保平台正确，我们明确指定编译 x64 版本
+      run: msbuild P4EXP.sln /p:Configuration=Release /p:Platform=x64
 
-    # 【新增的调试步骤】
-    # 这一步会列出编译后的所有文件和文件夹结构
-    - name: List build output for debugging
-      run: ls -RF
-      shell: bash
-
-    # 步骤5：将编译好的文件打包 (这一步现在会失败，但没关系)
+    # 步骤5：将编译好的文件打包
     - name: Package the artifacts
       run: |
         mkdir artifact
-        # 我们暂时保留这个错误的路径，目的是让工作流运行到上一步然后停止
-        cp -r P4EXP/bin/Release/net48/* artifact/
+        # 【最终修正】根据项目配置，使用正确的输出路径 bin/x64/Release/
+        cp -r bin/x64/Release/* artifact/
       shell: bash
-
+    
     # 步骤6：上传打包好的文件
     - name: Upload artifact
       uses: actions/upload-artifact@v4
