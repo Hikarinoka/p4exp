@@ -1,4 +1,4 @@
-# .github/workflows/build.yml (最终修正版)
+# .github/workflows/build.yml (最终修正版 v3)
 
 name: Build P4EXP with Chinese Language Pack
 
@@ -9,7 +9,6 @@ on:
 
 jobs:
   build:
-    # 使用 Windows 最新版的虚拟服务器来运行
     runs-on: windows-latest
 
     steps:
@@ -17,30 +16,16 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    # 步骤2：设置 MSBuild 环境
-    - name: Add msbuild to PATH
-      uses: microsoft/setup-msbuild@v1.1
-
-    # 步骤3：还原 NuGet 包
-    - name: Restore NuGet packages
-      run: nuget restore P4EXP.sln
-
-    # 步骤4：编译解决方案
-    - name: Build the solution
-      # 为了确保平台正确，我们明确指定编译 x64 版本
-      run: msbuild P4EXP.sln /p:Configuration=Release /p:Platform=x64
-
-    # 步骤5：将编译好的文件打包
-    - name: Package the artifacts
+    # 【新增】步骤2：下载并放置 P4API.NET 依赖项
+    - name: Download and place dependencies
       run: |
-        mkdir artifact
-        # 【最终修正】根据项目配置，使用正确的输出路径 bin/x64/Release/
-        cp -r bin/x64/Release/* artifact/
-      shell: bash
-    
-    # 步骤6：上传打包好的文件
-    - name: Upload artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: p4exp-zh-CN-build
-        path: artifact/
+        # 从 Perforce 官方 FTP 下载 P4API.NET (包含 p4bridge.dll)
+        Invoke-WebRequest -Uri "https://ftp.perforce.com/perforce/r23.2/bin.ntx64/p4api.net.zip" -OutFile "p4api.net.zip"
+        # 解压到临时文件夹
+        Expand-Archive -Path "p4api.net.zip" -DestinationPath "p4api_temp"
+        # 将需要的 DLL 复制到项目预期的 libs 文件夹中
+        Copy-Item -Path "p4api_temp/p4api.net/lib/net452/*" -Destination "libs/" -Recurse -Force
+      shell: powershell
+
+    # 步骤3：设置 MSBuild 环境
+    - name: Add msbuild to PATH
