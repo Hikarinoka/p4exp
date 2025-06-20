@@ -1,4 +1,4 @@
-# .github/workflows/build.yml (最终修正版 v5)
+# .github/workflows/build.yml (最终修正版 v6)
 
 name: Build P4EXP with Chinese Language Pack
 
@@ -19,13 +19,16 @@ jobs:
     # 步骤2：下载并放置 P4API.NET 依赖项
     - name: Download and place dependencies
       run: |
-        # 【重要修正】使用项目推荐的、真实存在的依赖包文件名
-        Invoke-WebRequest -Uri "ftp://ftp.perforce.com/perforce/r23.2/bin.ntx64/p4api_vs2015_dyn.zip" -OutFile "p4api.zip"
-        # 解压到临时文件夹
-        Expand-Archive -Path "p4api.zip" -DestinationPath "p4api_temp"
-        # 将需要的 DLL 复制到项目预期的 libs 文件夹中
-        Copy-Item -Path "p4api_temp/p4api.net/lib/net452/*" -Destination "libs/" -Recurse -Force
-      shell: powershell
+        # 【重要修正】改用 curl 工具下载，并使用 bash shell
+        echo "Downloading dependencies with curl..."
+        curl -o p4api.zip "ftp://ftp.perforce.com/perforce/r23.2/bin.ntx64/p4api_vs2015_dyn.zip"
+        
+        echo "Unzipping dependencies..."
+        unzip -q p4api.zip -d p4api_temp
+
+        echo "Copying required DLLs..."
+        cp -r p4api_temp/p4api.net/lib/net452/* libs/
+      shell: bash
 
     # 步骤3：设置 MSBuild 环境
     - name: Add msbuild to PATH
@@ -47,8 +50,3 @@ jobs:
       shell: bash
     
     # 步骤7：上传打包好的文件
-    - name: Upload artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: p4exp-zh-CN-build
-        path: artifact/
