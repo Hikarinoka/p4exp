@@ -15,10 +15,12 @@ jobs:
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '7.0.x'
+          dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore P4EXP.sln
+        run: |
+          dotnet --info
+          dotnet restore P4EXP.sln
 
       - name: Build project
         run: dotnet build P4EXP.sln --configuration Release
@@ -28,10 +30,8 @@ jobs:
 
       - name: Compile WiX Bundle
         run: |
-          candle.exe installer/Bundle.wxs \
-            -o installer/Bundle.wixobj -ext WixBalExtension
-          light.exe installer/Bundle.wixobj \
-            -o installer/output/Setup.exe -ext WixBalExtension
+          candle.exe installer/Bundle.wxs -o installer/Bundle.wixobj -ext WixBalExtension
+          light.exe installer/Bundle.wixobj -o installer/output/Setup.exe -ext WixBalExtension
 
       - name: Upload Installer
         uses: actions/upload-artifact@v3
