@@ -1,52 +1,33 @@
-# .github/workflows/build.yml (最终修正版 v6)
-
-name: Build P4EXP with Chinese Language Pack
-
-on:
-  push:
-    branches: [ main, master ]
-  workflow_dispatch:
-
+name: Build P4EXP
+on: [push, workflow_dispatch]
 jobs:
   build:
     runs-on: windows-latest
-
     steps:
-    # 步骤1：检出你的代码
-    - name: Checkout repository
-      uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v4
 
-    # 步骤2：下载并放置 P4API.NET 依赖项
-    - name: Download and place dependencies
+    - name: Set Env Vars
       run: |
-        # 【重要修正】改用 curl 工具下载，并使用 bash shell
-        echo "Downloading dependencies with curl..."
-        curl -o p4api.zip "ftp://ftp.perforce.com/perforce/r23.2/bin.ntx64/p4api_vs2015_dyn.zip"
-        
-        echo "Unzipping dependencies..."
-        unzip -q p4api.zip -d p4api_temp
+        p4 set P4PORT=your_server:1666
+        p4 set P4CLIENT=ci_workspace
+        p4 set P4USER=ci_user
 
-        echo "Copying required DLLs..."
-        cp -r p4api_temp/p4api.net/lib/net452/* libs/
-      shell: bash
-
-    # 步骤3：设置 MSBuild 环境
-    - name: Add msbuild to PATH
-      uses: microsoft/setup-msbuild@v1.1
-
-    # 步骤4：还原 NuGet 包
-    - name: Restore NuGet packages
-      run: nuget restore P4EXP.sln
-
-    # 步骤5：编译 P4EXP 单个项目
-    - name: Build the P4EXP Project
-      run: msbuild P4EXP/P4EXP.csproj /p:Configuration=Release /p:Platform=x64
-
-    # 步骤6：将编译好的文件打包
-    - name: Package the artifacts
+    - name: Download P4API.NET
       run: |
-        mkdir artifact
-        cp -r P4EXP/bin/x64/Release/* artifact/
-      shell: bash
-    
-    # 步骤7：上传打包好的文件
+        curl -L -o p4api.zip "https://mirror.ghproxy.com/ftp.perforce.com/r23.2/bin.ntx64/p4api_vs2015_dyn.zip"
+        unzip p4api.zip -d p4api_temp
+        mkdir libs
+        cp p4api_temp/p4api.net/lib/net452/* libs/
+
+    - name: Build Project
+      uses: microsoft/setup-msbuild@v1
+      run: |
+        nuget restore P4EXP.sln
+        msbuild P4EXP/P4EXP.csproj /p:Configuration=Release /p:Platform=x64
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: p4exp-release
+        path: P4EXP/bin/x64/Release/
