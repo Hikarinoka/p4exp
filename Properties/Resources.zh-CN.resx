@@ -1,0 +1,1056 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="p4v_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\p4v.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="latest_rev" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\latest_rev.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stale_rev" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stale_rev.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="p4exp_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\p4exp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="disconnected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\disconnected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="connected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\connected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="connected_with_issues" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\connected_with_issues.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checked_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checked-out.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HMFA-spinner-78x78" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HMFA-spinner-78x78.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContextMenus_SetConnectionConnectedMenuItem" xml:space="preserve">
+    <value>已连接 - 管理连接</value>
+  </data>
+  <data name="ContextMenus_AddToSourceControlMenuItem" xml:space="preserve">
+    <value>添加到源代码管理</value>
+  </data>
+  <data name="ContextMenus_CheckOutMenuItem" xml:space="preserve">
+    <value>签出</value>
+  </data>
+  <data name="ContextMenus_ConnectionInfoMenuItem" xml:space="preserve">
+    <value>连接信息</value>
+  </data>
+  <data name="ContextMenus_DeleteInHelixServerMenuItem" xml:space="preserve">
+    <value>在 P4 服务器中删除</value>
+  </data>
+  <data name="ContextMenus_DiffAgainstHaveMenuItem" xml:space="preserve">
+    <value>与持有的修订版进行差异对比</value>
+  </data>
+  <data name="ContextMenus_DiffAgainstMenuItem" xml:space="preserve">
+    <value>差异对比...</value>
+  </data>
+  <data name="ContextMenus_GetLatestRevisionMenuItem" xml:space="preserve">
+    <value>获取最新修订版</value>
+  </data>
+  <data name="ContextMenus_HelpMenuItem" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="ContextMenus_HistoyMenuItem" xml:space="preserve">
+    <value>历史记录</value>
+  </data>
+  <data name="ContextMenus_LogInMenuItem" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="ContextMenus_LogOffMenuItem" xml:space="preserve">
+    <value>注销</value>
+  </data>
+  <data name="ContextMenus_MainMenuItem" xml:space="preserve">
+    <value>P4</value>
+  </data>
+  <data name="ContextMenus_MoreMenuItem" xml:space="preserve">
+    <value>更多</value>
+  </data>
+  <data name="ContextMenus_NoWorkspaceSet" xml:space="preserve">
+    <value>此连接未设置工作区</value>
+  </data>
+  <data name="ContextMenus_OutsideRoot" xml:space="preserve">
+    <value>所选内容不在您的工作区根目录下</value>
+  </data>
+  <data name="ContextMenus_PreferencesMenuItem" xml:space="preserve">
+    <value>首选项...</value>
+  </data>
+  <data name="ContextMenus_PropertiesMenuItem" xml:space="preserve">
+    <value>属性</value>
+  </data>
+  <data name="ContextMenus_RefreshFileStateMenuItem" xml:space="preserve">
+    <value>刷新文件状态</value>
+  </data>
+  <data name="ContextMenus_RemoveFromWorkspaceMenuItem" xml:space="preserve">
+    <value>从工作区移除</value>
+  </data>
+  <data name="ContextMenus_RevertMenuItem" xml:space="preserve">
+    <value>还原</value>
+  </data>
+  <data name="ContextMenus_RevertUnchangedMenuItem" xml:space="preserve">
+    <value>还原未更改的文件</value>
+  </data>
+  <data name="ContextMenus_SelectionTypeFile" xml:space="preserve">
+    <value>文件 </value>
+  </data>
+  <data name="ContextMenus_SelectionTypeFolder" xml:space="preserve">
+    <value>文件夹 </value>
+  </data>
+  <data name="ContextMenus_SetConnectionNotConnectedMenuItem" xml:space="preserve">
+    <value>未连接 - 设置连接</value>
+  </data>
+  <data name="ContextMenus_ShowInP4VMenuItem" xml:space="preserve">
+    <value>在 P4 可视化客户端中显示</value>
+  </data>
+  <data name="ContextMenus_StartP4VMenuItem" xml:space="preserve">
+    <value>启动 P4 可视化客户端</value>
+  </data>
+  <data name="ContextMenus_SubmitMenuItem" xml:space="preserve">
+    <value>提交...</value>
+  </data>
+  <data name="ContextMenus_TimeLapseViewMenuItem" xml:space="preserve">
+    <value>时光回溯视图</value>
+  </data>
+  <data name="ContextMenus_ViewPendingChangelistsMenuItem" xml:space="preserve">
+    <value>查看待处理变更列表</value>
+  </data>
+  <data name="DlgEditWorkspace_Title" xml:space="preserve">
+    <value>工作区: {0} ({1}, {2})</value>
+    <comment>{0} is workspace.Name, {1} is  Server Port,  {2} is Peforce User</comment>
+  </data>
+  <data name="download_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FileLogger_BuildContextMenu" xml:space="preserve">
+    <value>生成右键菜单</value>
+  </data>
+  <data name="FileLogger_MenuExtension" xml:space="preserve">
+    <value>菜单扩展</value>
+  </data>
+  <data name="FileLogger_RefreshFileState" xml:space="preserve">
+    <value>刷新文件状态</value>
+  </data>
+  <data name="HAS_Authenticating" xml:space="preserve">
+    <value>正在认证...</value>
+  </data>
+  <data name="HAS_Auth_Fail" xml:space="preserve">
+    <value>无法通过 URL 授权用户“{0}”到服务器 {1}</value>
+    <comment>{0} is Peforce User, {1} is  Server Port</comment>
+  </data>
+  <data name="HAS_Timeout" xml:space="preserve">
+    <value>如果未进行外部认证，此对话框将超时</value>
+  </data>
+  <data name="HMFA_Download" xml:space="preserve">
+Download and install it to continue.</value>
+    <value>未找到 P4 MFA 认证器。请下载安装以继续。</value>
+  </data>
+  <data name="HMFA_Launch" xml:space="preserve">
+    <value>正在启动 P4 MFA 认证器...</value>
+  </data>
+  <data name="HMFA_Title" xml:space="preserve">
+    <value>请验证 {1} 上 {0} 的身份</value>
+    <comment>{0} is Peforce User, {1} is  Server Port</comment>
+  </data>
+  <data name="JobsToolWindowControl_1Match" xml:space="preserve">
+    <value>1 个匹配项</value>
+  </data>
+  <data name="JobsToolWindowControl_nMatches" xml:space="preserve">
+    <value>{0} 个匹配项</value>
+    <comment>{0} is number of specs returned</comment>
+  </data>
+  <data name="JobsToolWindowControl_NoConnection" xml:space="preserve">
+    <value>无连接</value>
+  </data>
+  <data name="JobsToolWindowControl_NoItemsAvailable" xml:space="preserve">
+    <value>无可用项</value>
+  </data>
+  <data name="JobsToolWindowControl_NoMatches" xml:space="preserve">
+    <value>无匹配项</value>
+  </data>
+  <data name="MessageDlg_Exception" xml:space="preserve">
+    <value>异常</value>
+  </data>
+  <data name="MessageDlg_P4Exception" xml:space="preserve">
+    <value>P4异常</value>
+  </data>
+  <data name="MessageDlg_PasswordExpired" xml:space="preserve">
+    <value>密码已过期</value>
+  </data>
+  <data name="NewUserDlg_NameContainsSpacesWarning" xml:space="preserve">
+    <value>名称包含空格，将自动纠正。</value>
+  </data>
+  <data name="NewUserDlg_PasswordsDontMatchWarning" xml:space="preserve">
+Please re-enter your new password.</value>
+    <value>新密码和确认新密码字段不匹配。\n请重新输入新密码。</value>
+  </data>
+  <data name="NewUserDlg_PasswordTooShortOrSimple" xml:space="preserve">
+    <value>密码长度必须至少为八位，并且包含大写和小写字母，或字母加一个或多个符号或数字。</value>
+  </data>
+  <data name="NewUserDlg_UserExistsWarning" xml:space="preserve">
+    <value>用户 {0} 已存在</value>
+    <comment>{0} is Peforce User</comment>
+  </data>
+  <data name="OpenConnectionDlg_EmptyWorkspaceNameWarning" xml:space="preserve">
+    <value>名称不能为空</value>
+  </data>
+  <data name="OpenConnectionDlg_NameContainsSpacesWarning" xml:space="preserve">
+    <value>名称包含空格，将自动纠正。</value>
+  </data>
+  <data name="OpenConnectionDlg_NewWorkspaceDlgPrompt" xml:space="preserve">
+    <value>请输入新工作区名称：</value>
+  </data>
+  <data name="OpenConnectionDlg_NewWorkspaceDlgTitle" xml:space="preserve">
+    <value>新建工作区</value>
+  </data>
+  <data name="OpenConnectionDlg_WorkspaceExistsWarning" xml:space="preserve">
+    <value>名为 {0} 的工作区已存在</value>
+    <comment>{0} is workspace.Name</comment>
+  </data>
+  <data name="P4EXP" xml:space="preserve">
+    <value>P4EXP</value>
+  </data>
+  <data name="SccHistoryDetailsControl_FileSizeBytes" xml:space="preserve">
+    <value>{0} 字节</value>
+    <comment>{0} is number of bytes</comment>
+  </data>
+  <data name="SccHistoryDetailsControl_FileSizeGigaBytes" xml:space="preserve">
+    <value>{0:F3} GB</value>
+    <comment>{0} is number of GB</comment>
+  </data>
+  <data name="SccHistoryDetailsControl_FileSizeKiloBytes" xml:space="preserve">
+    <value>{0:F3} KB</value>
+    <comment>{0} is number of KB</comment>
+  </data>
+  <data name="SccHistoryDetailsControl_FileSizeMegaBytes" xml:space="preserve">
+    <value>{0:F3} MB</value>
+    <comment>{0} is number of MB</comment>
+  </data>
+  <data name="SccHistoryDetailsControl_FileSizeTeraBytes" xml:space="preserve">
+    <value>{0:F3} TB</value>
+    <comment>{0} is number of TB</comment>
+  </data>
+  <data name="HASCheckDlg_AuthenticatingLabel" xml:space="preserve">
+    <value>正在认证...</value>
+  </data>
+  <data name="HASCheckDlg_TimeoutLabel" xml:space="preserve">
+    <value>如果未进行外部认证，此对话框将超时</value>
+  </data>
+  <data name="HASCheckDlg_VerifyTitle" xml:space="preserve">
+    <value>请验证 {1} 上 {0} 的身份</value>
+    <comment>{0} is Peforce User, {1} is  Server Port</comment>
+  </data>
+  <data name="LaunchingHMFA_CloseBtn" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="LaunchingHMFA_DownloadBtn" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="LaunchingHMFA_ExpiredLabel" xml:space="preserve">
+    <value>您的会话已过期。您必须验证身份才能继续在此连接中工作。</value>
+  </data>
+  <data name="LaunchingHMFA_LaunchingLabel" xml:space="preserve">
+    <value>正在启动 P4 MFA 认证器...</value>
+  </data>
+  <data name="LaunchingHMFA_VerifyTitle" xml:space="preserve">
+    <value>请验证 {1} 上 {0} 的身份</value>
+    <comment>{0} is Peforce User, {1} is  Server Port</comment>
+  </data>
+  <data name="LoginDlg_CancelBtn" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="LoginDlg_LoginTitle" xml:space="preserve">
+    <value>需要 P4 密码</value>
+  </data>
+  <data name="LoginDlg_MessageLabel" xml:space="preserve">
+    <value>用户“{0}”在服务器“{1}”上需要密码。</value>
+    <comment>{0} is Peforce User, {1} is  Server Port</comment>
+  </data>
+  <data name="LoginDlg_OKBtn" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="LoginDlg_PromptLabel" xml:space="preserve">
+    <value>请输入密码：</value>
+  </data>
+  <data name="MessageDlg_MessageTitle" xml:space="preserve">
+    <value>消息</value>
+  </data>
+  <data name="MessageDlg_OKBtn" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="PreferencesDlg_DeletePromptCB" xml:space="preserve">
+    <value>删除时在 P4 服务器中确认</value>
+  </data>
+  <data name="PreferencesDlg_DiagLoggingCB" xml:space="preserve">
+    <value>启用(&amp;D)诊断日志</value>
+  </data>
+  <data name="PreferencesDlg_ExceptionsCB" xml:space="preserve">
+    <value>显示异常 (调试)</value>
+  </data>
+  <data name="PreferencesDlg_IconsCB" xml:space="preserve">
+    <value>(&amp;S)显示文件状态图标 (此更改将在您重新启动文件资源管理器时生效)</value>
+  </data>
+  <data name="PreferencesDlg_Logging PathTB" xml:space="preserve">
+    <value>(local path of log.txt file)</value>
+  </data>
+  <data name="PreferencesDlg_LoggingCB" xml:space="preserve">
+    <value>(&amp;E)启用日志记录到文件</value>
+  </data>
+  <data name="PreferencesDlg_LoggingPathLabel" xml:space="preserve">
+    <value>名称：</value>
+  </data>
+  <data name="PreferencesDlg_LoggingSizeLabel" xml:space="preserve">
+    <value>大小 (kb)：</value>
+  </data>
+  <data name="PreferencesDlg_LoggingSizeTB" xml:space="preserve">
+    <value>500</value>
+  </data>
+  <data name="PreferencesDlg_MessagesCB" xml:space="preserve">
+    <value>(&amp;S)仅显示错误信息</value>
+  </data>
+  <data name="PreferencesDlg_OKBtn" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="PreferencesDlg_P4ExceptionsCB" xml:space="preserve">
+    <value>显示 P4Exceptions (调试)</value>
+  </data>
+  <data name="PreferencesDlg_PreferencesTitle" xml:space="preserve">
+    <value>首选项</value>
+  </data>
+  <data name="PreferencesDlg_SelectBtn" xml:space="preserve">
+    <value>选择...</value>
+  </data>
+  <data name="RevertDeleteWarningDlg_DeleteCB" xml:space="preserve">
+    <value>将来不再确认删除</value>
+  </data>
+  <data name="RevertDeleteWarningDlg_DeleteWarningLabel" xml:space="preserve">
+    <value>在 P4 服务器中标记文件为删除将删除本地文件。
+标记为删除的文件必须提交以完成在 P4 服务器中的删除。
+是否继续删除？</value>
+  </data>
+  <data name="RevertDeleteWarningDlg_DeleteWarningTitle" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="RevertDeleteWarningDlg_NoBtn" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="RevertDeleteWarningDlg_RevertDeleteWarningTitle" xml:space="preserve">
+    <value>P4</value>
+  </data>
+  <data name="RevertDeleteWarningDlg_RevertWarningLabel" xml:space="preserve">
+    <value>还原文件将覆盖对文件的任何编辑。
+是否继续还原？</value>
+  </data>
+  <data name="RevertDeleteWarningDlg_RevertWarningTitle" xml:space="preserve">
+    <value>还原</value>
+  </data>
+  <data name="RevertDeleteWarningDlg_YesBtn" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="SslPromptDlg_CancelBtn" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="SslPromptDlg_ConnectBtn" xml:space="preserve">
+    <value>连接</value>
+  </data>
+  <data name="SslPromptDlg_SslTitle" xml:space="preserve">
+    <value>P4EXP 安全警告</value>
+  </data>
+  <data name="SslPromptDlg_TrustCB" xml:space="preserve">
+    <value>(&amp;T)信任此连接以便将来使用</value>
+  </data>
+  <data name="SslPromptDlg_WarningLabel" xml:space="preserve">
+    <value>******* 警告 P4PORT 标识已更改! *******</value>
+  </data>
+  <data name="FileLogger_Add" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="FileLogger_CheckOut" xml:space="preserve">
+    <value>签出</value>
+  </data>
+  <data name="FileLogger_Connect" xml:space="preserve">
+    <value>连接</value>
+  </data>
+  <data name="FileLogger_ConnectionInfo" xml:space="preserve">
+    <value>连接信息</value>
+  </data>
+  <data name="FileLogger_CreatingNewRepository" xml:space="preserve">
+    <value>正在创建新仓库：{0}/{1}/{2}</value>
+    <comment>{0} is Server Port, {1} is Peforce User ,  {2} is workspace.Name</comment>
+  </data>
+  <data name="FileLogger_Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="FileLogger_DiffAgainst" xml:space="preserve">
+    <value>差异对比</value>
+  </data>
+  <data name="FileLogger_DiffAgainstHave" xml:space="preserve">
+    <value>与持有的修订版对比</value>
+  </data>
+  <data name="FileLogger_DiffFile" xml:space="preserve">
+    <value>文件对比</value>
+  </data>
+  <data name="FileLogger_DiffVSHave" xml:space="preserve">
+    <value>与持有的对比</value>
+  </data>
+  <data name="FileLogger_FailedToSetClientDelay15" xml:space="preserve">
+    <value>设置客户端失败，延迟15秒</value>
+  </data>
+  <data name="FileLogger_FileHistory" xml:space="preserve">
+    <value>文件历史</value>
+  </data>
+  <data name="FileLogger_FileProperties" xml:space="preserve">
+    <value>文件属性</value>
+  </data>
+  <data name="FileLogger_FolderHistory" xml:space="preserve">
+    <value>文件夹历史</value>
+  </data>
+  <data name="FileLogger_GetFileContents" xml:space="preserve">
+    <value>获取文件内容</value>
+  </data>
+  <data name="FileLogger_GetLatest" xml:space="preserve">
+    <value>获取最新</value>
+  </data>
+  <data name="FileLogger_GetLatestRevision" xml:space="preserve">
+    <value>获取最新修订版</value>
+  </data>
+  <data name="FileLogger_GetRepository" xml:space="preserve">
+    <value>获取仓库</value>
+  </data>
+  <data name="FileLogger_Help" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="FileLogger_History" xml:space="preserve">
+    <value>历史记录</value>
+  </data>
+  <data name="FileLogger_LaunchingPreferences" xml:space="preserve">
+    <value>正在启动首选项对话框</value>
+  </data>
+  <data name="FileLogger_LocateP4Merge" xml:space="preserve">
+    <value>定位 P4Merge</value>
+  </data>
+  <data name="FileLogger_LocateP4VC" xml:space="preserve">
+    <value>定位 P4V CLI</value>
+  </data>
+  <data name="FileLogger_Login" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="FileLogger_LogOff" xml:space="preserve">
+    <value>注销</value>
+  </data>
+  <data name="FileLogger_Open in P4V" xml:space="preserve">
+    <value>在 P4 可视化客户端中打开</value>
+  </data>
+  <data name="FileLogger_P4EXPProgram" xml:space="preserve">
+    <value>P4EXP程序</value>
+  </data>
+  <data name="FileLogger_PendingChangelists" xml:space="preserve">
+    <value>待处理变更列表</value>
+  </data>
+  <data name="FileLogger_Preferences" xml:space="preserve">
+    <value>首选项</value>
+  </data>
+  <data name="FileLogger_RefreshClientData" xml:space="preserve">
+    <value>刷新客户端数据</value>
+  </data>
+  <data name="FileLogger_RefreshExplorer" xml:space="preserve">
+    <value>刷新资源管理器</value>
+  </data>
+  <data name="FileLogger_RefreshingClient" xml:space="preserve">
+    <value>正在刷新客户端 {0}</value>
+    <comment>{0} is workspace.Name</comment>
+  </data>
+  <data name="FileLogger_RefreshingPath" xml:space="preserve">
+    <value>正在刷新路径 {0}</value>
+    <comment>{0} is file path</comment>
+  </data>
+  <data name="FileLogger_RemoveFromWorkspace" xml:space="preserve">
+    <value>从工作区移除</value>
+  </data>
+  <data name="FileLogger_RepoStorage" xml:space="preserve">
+    <value>仓库存储</value>
+  </data>
+  <data name="FileLogger_RetryingConnection" xml:space="preserve">
+    <value>正在重试连接 {0}</value>
+    <comment>{0} is Server Port</comment>
+  </data>
+  <data name="FileLogger_Revert" xml:space="preserve">
+    <value>还原</value>
+  </data>
+  <data name="FileLogger_RevertUnchanged" xml:space="preserve">
+    <value>还原未更改</value>
+  </data>
+  <data name="FileLogger_SetConnection" xml:space="preserve">
+    <value>设置连接</value>
+  </data>
+  <data name="FileLogger_ShowProperties" xml:space="preserve">
+    <value>显示属性</value>
+  </data>
+  <data name="FileLogger_StartP4V" xml:space="preserve">
+    <value>启动 P4 可视化客户端</value>
+  </data>
+  <data name="FileLogger_Submit" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="FileLogger_TimeLapseView" xml:space="preserve">
+    <value>时光回溯视图</value>
+  </data>
+  <data name="FileLogger_TreeListView_EnsureVisible" xml:space="preserve">
+    <value>确保选中项可见</value>
+  </data>
+  <data name="FileLogger_UsingSSO" xml:space="preserve">
+    <value>使用 SSO：</value>
+  </data>
+  <data name="MessageDlg_AddFiles" xml:space="preserve">
+    <value>添加文件</value>
+  </data>
+  <data name="MessageDlg_CannotLocateP4Merge" xml:space="preserve">
+    <value>无法找到部分 P4EXP 功能所需的 P4Merge 应用程序</value>
+  </data>
+  <data name="MessageDlg_CannotLocateP4V" xml:space="preserve">
+    <value>无法找到部分 P4EXP 功能所需的 P4 可视化客户端应用程序</value>
+  </data>
+  <data name="MessageDlg_CannotLocateP4VC" xml:space="preserve">
+    <value>无法找到部分 P4EXP 功能所需的 P4V CLI 应用程序</value>
+  </data>
+  <data name="MessageDlg_CheckOut" xml:space="preserve">
+    <value>签出</value>
+  </data>
+  <data name="MessageDlg_CheckoutWarningsAndErrors" xml:space="preserve">
+    <value>
+
+服务器报告了以下错误和警告：
+</value>
+  </data>
+  <data name="MessageDlg_ConnectionError" xml:space="preserve">
+    <value>连接错误</value>
+  </data>
+  <data name="MessageDlg_ConnectionInfo" xml:space="preserve">
+    <value>连接信息</value>
+  </data>
+  <data name="MessageDlg_Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="MessageDlg_DiffAgainstHave" xml:space="preserve">
+    <value>与持有的修订版对比</value>
+  </data>
+  <data name="MessageDlg_Error" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="MessageDlg_FileAdded" xml:space="preserve">
+    <value> 文件已添加</value>
+  </data>
+  <data name="MessageDlg_FileCheckedOut" xml:space="preserve">
+    <value> 文件已签出</value>
+  </data>
+  <data name="MessageDlg_FileMarkedForDelete" xml:space="preserve">
+    <value> 文件已在 P4 服务器中标记为删除</value>
+  </data>
+  <data name="MessageDlg_FileRemovedFromWorkspace" xml:space="preserve">
+    <value> 文件已从工作区移除</value>
+  </data>
+  <data name="MessageDlg_FileReverted" xml:space="preserve">
+    <value> 文件已还原</value>
+  </data>
+  <data name="MessageDlg_FilesAdded" xml:space="preserve">
+    <value> 文件已添加</value>
+  </data>
+  <data name="MessageDlg_FilesCheckedOut" xml:space="preserve">
+    <value> 文件已签出</value>
+  </data>
+  <data name="MessageDlg_FilesMarkedForDelete" xml:space="preserve">
+    <value> 文件已在 P4 服务器中标记为删除</value>
+  </data>
+  <data name="MessageDlg_FilesRemovedFromWorkspace" xml:space="preserve">
+    <value> 文件已从工作区移除</value>
+  </data>
+  <data name="MessageDlg_FilesReverted" xml:space="preserve">
+    <value> 文件已还原</value>
+  </data>
+  <data name="MessageDlg_FilesUpdated" xml:space="preserve">
+    <value> 文件已更新</value>
+  </data>
+  <data name="MessageDlg_FileUpdated" xml:space="preserve">
+    <value> 文件已更新</value>
+  </data>
+  <data name="MessageDlg_GetLatestRevision" xml:space="preserve">
+    <value>获取最新修订版</value>
+  </data>
+  <data name="MessageDlg_LoginFailed" xml:space="preserve">
+    <value>登录失败</value>
+  </data>
+  <data name="MessageDlg_MaximumFileLimitExceeded" xml:space="preserve">
+    <value> 目录中的文件数已超出最大限制。</value>
+  </data>
+  <data name="MessageDlg_MissingApplication" xml:space="preserve">
+    <value>缺少应用程序</value>
+  </data>
+  <data name="MessageDlg_NoConnection" xml:space="preserve">
+    <value>无连接</value>
+  </data>
+  <data name="MessageDlg_NoConnectionForPort" xml:space="preserve">
+    <value>{0} 无连接</value>
+    <comment>{0} is  Server Port</comment>
+  </data>
+  <data name="MessageDlg_NoDiffsFromHaveRev" xml:space="preserve">
+    <value>与持有修订版无差异</value>
+  </data>
+  <data name="MessageDlg_NoFilesAdded" xml:space="preserve">
+    <value>未添加文件</value>
+  </data>
+  <data name="MessageDlg_NoFilesCheckedOut" xml:space="preserve">
+    <value>未签出文件</value>
+  </data>
+  <data name="MessageDlg_NoFilesMarkedForDelete" xml:space="preserve">
+    <value>无文件在 P4 服务器中标记为删除</value>
+  </data>
+  <data name="MessageDlg_NoFilesRemovedFromWorkspace" xml:space="preserve">
+    <value>无文件从工作区移除</value>
+  </data>
+  <data name="MessageDlg_NoFilesReverted" xml:space="preserve">
+    <value>无文件被还原</value>
+  </data>
+  <data name="MessageDlg_NoFilesUpdated" xml:space="preserve">
+    <value>无文件被更新</value>
+  </data>
+  <data name="MessageDlg_RemoveFromWorkspace" xml:space="preserve">
+    <value>从工作区移除</value>
+  </data>
+  <data name="MessageDlg_Revert" xml:space="preserve">
+    <value>还原</value>
+  </data>
+  <data name="MessageDlg_RevertUnchanged" xml:space="preserve">
+    <value>还原未更改</value>
+  </data>
+  <data name="MessageDlg_UnableToCompleteAction" xml:space="preserve">
+    <value>无法完成操作</value>
+  </data>
+  <data name="OpenConnectionDlg_CheckConnectionError" xml:space="preserve">
+    <value>无法完成操作。
+请确认服务器和用户输入有效。</value>
+  </data>
+  <data name="OpenConnectionDlg_CheckLoginError" xml:space="preserve">
+    <value>无法完成操作。请确认您已登录。</value>
+  </data>
+  <data name="OpenConnectionDlg_SetRepoFromDlgError" xml:space="preserve">
+    <value>无法完成操作。请确认服务器条目有效。</value>
+  </data>
+  <data name="ConnectionInfo_ClientVersion" xml:space="preserve">
+    <value>客户端版本：</value>
+  </data>
+  <data name="ConnectionInfo_Copyright" xml:space="preserve">
+    <value>Copyright (C)</value>
+  </data>
+  <data name="ConnectionInfo_CurrentDirectory" xml:space="preserve">
+    <value>当前目录：</value>
+  </data>
+  <data name="ConnectionInfo_HelixPlugin" xml:space="preserve">
+    <value>Helix Plugin for File Explorer</value>
+  </data>
+  <data name="ConnectionInfo_PerforceSoftware" xml:space="preserve">
+    <value>Perforce 软件</value>
+  </data>
+  <data name="ConnectionInfo_Platformx64" xml:space="preserve">
+    <value>x64</value>
+  </data>
+  <data name="ConnectionInfo_Platformx86" xml:space="preserve">
+    <value>x86</value>
+  </data>
+  <data name="FileLogger_BeginDiagLogging" xml:space="preserve">
+    <value>开始诊断日志记录</value>
+  </data>
+  <data name="FileLogger_Debug" xml:space="preserve">
+    <value>Debug-{0}</value>
+  </data>
+  <data name="FileLogger_EndDiagLogging" xml:space="preserve">
+    <value>结束诊断日志记录</value>
+  </data>
+  <data name="FileLogger_InnerException" xml:space="preserve">
+    <value>内部异常</value>
+  </data>
+  <data name="FileLogger_LogLevelError" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="FileLogger_LogLevelFatal" xml:space="preserve">
+    <value>致命</value>
+  </data>
+  <data name="FileLogger_LogLevelInfo" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="FileLogger_LogLevelWarning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="Login_PasswordRequired" xml:space="preserve">
+    <value>用户 '{0}' 在服务器 '{1}' 上需要密码。</value>
+  </data>
+  <data name="SaveFileDlg_Filter" xml:space="preserve">
+    <value>文本文件 (*.txt)|*.txt</value>
+  </data>
+  <data name="SaveFileDlg_Title" xml:space="preserve">
+    <value>输入日志文件名：</value>
+  </data>
+  <data name="SslPromptDlg_WarningText" xml:space="preserve">
+    <value>可能有人正在拦截您到 P4 服务器 P4PORT '10.0.50.39:1667' 的连接
+如果这不是计划中的密钥更改，您应该联系
+您的 P4 服务器管理员。
+发送到客户端的密钥指纹是：
+19:4F:E0:B8:C9:C8:2B:EF:30:72:7F:DF:C1:95:5A:11:77:37:BA:39</value>
+  </data>
+  <data name="OpenConnectionDlg_CancelBtn" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="OpenConnectionDlg_EnterConnectionSettings" xml:space="preserve">
+    <value>输入连接设置：</value>
+  </data>
+  <data name="OpenConnectionDlg_HelpBtn" xml:space="preserve">
+    <value>帮助</value>
+  </data>
+  <data name="OpenConnectionDlg_OKBtn" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="OpenConnectionDlg_ServerLabel" xml:space="preserve">
+    <value>服务器：</value>
+  </data>
+  <data name="OpenConnectionDlg_Title" xml:space="preserve">
+    <value>设置连接</value>
+  </data>
+  <data name="OpenConnectionDlg_UserBrowseBtn" xml:space="preserve">
+    <value>浏览...</value>
+  </data>
+  <data name="OpenConnectionDlg_UserLabel" xml:space="preserve">
+    <value>用户：</value>
+  </data>
+  <data name="OpenConnectionDlg_UserNewBtn" xml:space="preserve">
+    <value>新建...</value>
+  </data>
+  <data name="OpenConnectionDlg_VersionLabel" xml:space="preserve">
+    <value>版本：</value>
+  </data>
+  <data name="OpenConnectionDlg_WorkspaceBrowseBtn" xml:space="preserve">
+    <value>浏览...</value>
+  </data>
+  <data name="OpenConnectionDlg_WorkspaceLabel" xml:space="preserve">
+    <value>工作区：</value>
+  </data>
+  <data name="OpenConnectionDlg_WorkspaceNewBtn" xml:space="preserve">
+    <value>新建...</value>
+  </data>
+  <data name="NewUserDlg_CancelBtn" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="NewUserDlg_EmailLabel" xml:space="preserve">
+    <value>电子邮件：</value>
+  </data>
+  <data name="NewUserDlg_EnterPasswordTwiceLabel" xml:space="preserve">
+    <value>输入密码（重复）：</value>
+  </data>
+  <data name="NewUserDlg_FirstAndLastNameLabel" xml:space="preserve">
+    <value>姓名：</value>
+  </data>
+  <data name="NewUserDlg_FullNameLabel" xml:space="preserve">
+    <value>全名：</value>
+  </data>
+  <data name="NewUserDlg_PasswordLabel" xml:space="preserve">
+    <value>密码：</value>
+  </data>
+  <data name="NewUserDlg_SaveBtn" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="NewUserDlg_Title" xml:space="preserve">
+    <value>新用户</value>
+  </data>
+  <data name="NewUserDlg_UserNameInstLabel" xml:space="preserve">
+    <value>登录名（不允许空格）</value>
+  </data>
+  <data name="NewUserDlg_UserNameLabel" xml:space="preserve">
+    <value>用户名称：</value>
+  </data>
+  <data name="UsersBrowser_CancelBtn" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="UsersBrowser_EmailHeader" xml:space="preserve">
+    <value>电子邮件</value>
+  </data>
+  <data name="UsersBrowser_FullNameHeader" xml:space="preserve">
+    <value>全名</value>
+  </data>
+  <data name="UsersBrowser_LastAccessedHeader" xml:space="preserve">
+    <value>最后访问</value>
+  </data>
+  <data name="UsersBrowser_OKBtn" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="UsersBrowser_Title" xml:space="preserve">
+    <value>选择用户</value>
+  </data>
+  <data name="UsersBrowser_UserHeader" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="WorkspaceBrowser_CancelBtn" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="WorkspaceBrowser_DescriptionHeader" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="WorkspaceBrowser_LastAccessedHeader" xml:space="preserve">
+    <value>最后访问</value>
+  </data>
+  <data name="WorkspaceBrowser_OKBtn" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="WorkspaceBrowser_OwnerHeader" xml:space="preserve">
+    <value>所有者</value>
+  </data>
+  <data name="WorkspaceBrowser_Title" xml:space="preserve">
+    <value>选择工作区</value>
+  </data>
+  <data name="WorkspaceBrowser_WorkspaceHeader" xml:space="preserve">
+    <value>工作区</value>
+  </data>
+ <data name="WorkspaceEditDlg_AllwriteChkB" xml:space="preserve">
+    <value>全部可写</value>
+  </data>
+  <data name="WorkspaceEditDlg_AltRootsLabel" xml:space="preserve">
+    <value>备用根目录：</value>
+  </data>
+  <data name="WorkspaceEditDlg_BrowseBtn" xml:space="preserve">
+    <value>浏览</value>
+  </data>
+  <data name="WorkspaceEditDlg_CancelBtn" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="WorkspaceEditDlg_ClobberChkB" xml:space="preserve">
+    <value>覆盖</value>
+  </data>
+  <data name="WorkspaceEditDlg_CompressChkB" xml:space="preserve">
+    <value>压缩</value>
+  </data>
+  <data name="WorkspaceEditDlg_DateModifiedLabel" xml:space="preserve">
+    <value>修改日期：</value>
+  </data>
+  <data name="WorkspaceEditDlg_DescriptionLabel" xml:space="preserve">
+    <value>描述：</value>
+  </data>
+  <data name="WorkspaceEditDlg_HostLabel" xml:space="preserve">
+    <value>主机：</value>
+  </data>
+  <data name="WorkspaceEditDlg_LastAccessedLabel" xml:space="preserve">
+    <value>最后访问：</value>
+  </data>
+  <data name="WorkspaceEditDlg_LineEndingsLabel" xml:space="preserve">
+    <value>行尾符：</value>
+  </data>
+  <data name="WorkspaceEditDlg_LineEndingsLocalCB" xml:space="preserve">
+    <value>本地</value>
+  </data>
+  <data name="WorkspaceEditDlg_LineEndingsMacCB" xml:space="preserve">
+    <value>Mac</value>
+  </data>
+  <data name="WorkspaceEditDlg_LineEndingsShareCB" xml:space="preserve">
+    <value>共享</value>
+  </data>
+  <data name="WorkspaceEditDlg_LineEndingsUnixCB" xml:space="preserve">
+    <value>Unix</value>
+  </data>
+  <data name="WorkspaceEditDlg_LineEndingsWinCB" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="WorkspaceEditDlg_LockedChkB" xml:space="preserve">
+    <value>锁定</value>
+  </data>
+  <data name="WorkspaceEditDlg_ModtimeChkB" xml:space="preserve">
+    <value>修改时间</value>
+  </data>
+  <data name="WorkspaceEditDlg_OKBtn" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="WorkspaceEditDlg_OptionsLabel" xml:space="preserve">
+    <value>选项：</value>
+  </data>
+  <data name="WorkspaceEditDlg_OwnerLabel" xml:space="preserve">
+    <value>所有者：</value>
+  </data>
+  <data name="WorkspaceEditDlg_RmdirChkB" xml:space="preserve">
+    <value>删除目录</value>
+  </data>
+  <data name="WorkspaceEditDlg_RootLabel" xml:space="preserve">
+    <value>根目录：</value>
+  </data>
+  <data name="WorkspaceEditDlg_ServerIDLabel" xml:space="preserve">
+    <value>服务器ID：</value>
+  </data>
+  <data name="WorkspaceEditDlg_StreamAtChangeLabel" xml:space="preserve">
+    <value>在变更：</value>
+  </data>
+  <data name="WorkspaceEditDlg_StreamRootLabel" xml:space="preserve">
+    <value>流根目录：</value>
+  </data>
+  <data name="WorkspaceEditDlg_SubmitoptionsLabel" xml:space="preserve">
+    <value>提交选项：</value>
+  </data>
+  <data name="WorkspaceEditDlg_SubmitOptionsLeaveUnchanged" xml:space="preserve">
+    <value>保留未更改</value>
+  </data>
+  <data name="WorkspaceEditDlg_SubmitOptionsLeaveUnchangedReopen" xml:space="preserve">
+    <value>保留未更改+重新打开</value>
+  </data>
+  <data name="WorkspaceEditDlg_SubmitOptionsRevertUnchanged" xml:space="preserve">
+    <value>还原未更改</value>
+  </data>
+  <data name="WorkspaceEditDlg_SubmitOptionsRevertUnchangedReopen" xml:space="preserve">
+    <value>还原未更改+重新打开</value>
+  </data>
+  <data name="WorkspaceEditDlg_SubmitOptionsSubmitUnchangedCB" xml:space="preserve">
+    <value>提交未更改</value>
+  </data>
+  <data name="WorkspaceEditDlg_SubmitOptionsSubmitUnchangedReopen" xml:space="preserve">
+    <value>提交未更改+重新打开</value>
+  </data>
+  <data name="WorkspaceEditDlg_Title" xml:space="preserve">
+    <value>工作区：</value>
+  </data>
+  <data name="WorkspaceEditDlg_ViewLabel" xml:space="preserve">
+    <value>视图：</value>
+  </data>
+  <data name="WorkspaceEditDlg_WorkspaceLabel" xml:space="preserve">
+    <value>工作区：</value>
+  </data>
+  <data name="GetStringDlg_CancelBtn" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="GetStringDlg_OKBtn" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="HelpLink_Connection" xml:space="preserve">
+    <value>https://www.perforce.com/manuals/p4exp/Content/P4EXP/p4exp.html#Connecting_to_Helix_server</value>
+  </data>
+  <data name="HelpLink_Index" xml:space="preserve">
+    <value>https://www.perforce.com/perforce/doc.current/manuals/p4exp/index.html</value>
+  </data>
+  <data name="PreferencesDlg_UseIPSpecificTicketCB" xml:space="preserve">
+    <value>登录时使用IP特定票据</value>
+  </data>
+</root>
