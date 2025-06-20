@@ -29,3 +29,27 @@ jobs:
 
     # 步骤3：设置 MSBuild 环境
     - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v1.1
+
+    # 步骤4：还原 NuGet 包
+    - name: Restore NuGet packages
+      run: nuget restore P4EXP.sln
+
+    # 步骤5：编译 P4EXP 单个项目 (而不是整个解决方案)
+    - name: Build the P4EXP Project
+      run: msbuild P4EXP/P4EXP.csproj /p:Configuration=Release /p:Platform=x64
+
+    # 步骤6：将编译好的文件打包
+    - name: Package the artifacts
+      run: |
+        mkdir artifact
+        # 因为我们现在直接编译项目，所以输出路径是相对于项目文件的
+        cp -r P4EXP/bin/x64/Release/* artifact/
+      shell: bash
+    
+    # 步骤7：上传打包好的文件
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: p4exp-zh-CN-build
+        path: artifact/
